@@ -59,6 +59,8 @@ En el minuto 2:15 del video, se puede observar como el robot se habia quedado pi
 
 Sobre el minuto 4:35, tambien se observa como el robot estaba teniendo problemas para encontrar una pared a la que seguir, y con la solucion del reset, ha conseguido salir de ahi y continuando barriendo la zona.
 
+He podido observar que los armarios marrones no se detectan bien con el laser.
+
 ## Tests
 
 He incluido varias imagenes y un video de distintas ejecuciones del algoritmo funcionado durante 10 minutos.
