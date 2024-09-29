@@ -58,3 +58,7 @@ Despues de muchas ejecuciones, tuve la idea de que si cada 'x' follow_wall le al
 En el minuto 2:15 del video, se puede observar como el robot se habia quedado pillado intentando encontrar una pared de nuevo para volver a seguirla, y se ve como ahi se ha ejecudao el reset anteriormente comenentado, y justo despues, hay un follow_wall largo que ayuda a alejarse de la zona donde estaba para poder cubrir una zona nueva,
 
 Sobre el minuto 4:35, tambien se observa como el robot estaba teniendo problemas para encontrar una pared a la que seguir, y con la solucion del reset, ha conseguido salir de ahi y continuando barriendo la zona.
+
+## Pruebas
+
+He incluido varias imagenes y un video de distintas ejecuciones del algoritmo funcionado durante 10 minutos.
