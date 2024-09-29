@@ -41,7 +41,7 @@ elif (reset_timer_end - reset_timer_init > RESET_TIME):
 
 Despues de muchas ejecuciones, tuve la idea de que si cada 'x' follow_wall le alargaba el tiempo de seguir la pared, podria audarme en algunos casos a alejarme mas de la zona donde estoy para poder llegar a una zona nueva y barrerla.
 
-```
+```python
 # Cada 3 follow_wall uno largo
   if (n_follow_wall % 3 == 0):
       print("EXTRA_FOLLOW")
@@ -55,3 +55,6 @@ Despues de muchas ejecuciones, tuve la idea de que si cada 'x' follow_wall le al
           close_wall = False
           t1 = time.time()
 ```
+En el minuto 2:15 del video, se puede observar como el robot se habia quedado pillado intentando encontrar una pared de nuevo para volver a seguirla, y se ve como ahi se ha ejecudao el reset anteriormente comenentado, y justo despues, hay un follow_wall largo que ayuda a alejarse de la zona donde estaba para poder cubrir una zona nueva,
+
+Sobre el minuto 4:35, tambien se observa como el robot estaba teniendo problemas para encontrar una pared a la que seguir, y con la solucion del reset, ha conseguido salir de ahi y continuando barriendo la zona.
