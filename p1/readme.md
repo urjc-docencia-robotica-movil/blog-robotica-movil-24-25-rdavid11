@@ -30,4 +30,28 @@ avg = sum(distances_right) / len(distances_right)
 
 Otro de los problemas que me habian surgido, era que a veces, al pasar del barrido al seguir pared de nuevo, si el cambio era muy cerca de una pared, podia no detectarla bien o quedandose girando infinitamente porque detecta que no esta a la distancia que deberia.
 
-Esto he podido solucionarlo metiendole un timer de RESET. Lo que hace es que si en 10 segundos de empezar a buscar la pared
+Esto he podido solucionarlo metiendole un timer de RESET. Lo que hace es que si en 10 segundos de empezar a buscar la pared no la ha encontrado, vaya ligeramente para atras y despues vuelva a buscar la pared.
+
+```python
+elif (reset_timer_end - reset_timer_init > RESET_TIME):
+    HAL.setV(-0.5)
+    if (reset_timer_end - reset_timer_init > RESET_TIME + 0.5):
+        wall_state = APPROACH
+```
+
+Despues de muchas ejecuciones, tuve la idea de que si cada 'x' follow_wall le alargaba el tiempo de seguir la pared, podria audarme en algunos casos a alejarme mas de la zona donde estoy para poder llegar a una zona nueva y barrerla.
+
+```
+# Cada 3 follow_wall uno largo
+  if (n_follow_wall % 3 == 0):
+      print("EXTRA_FOLLOW")
+      if (t2 - t1 > 45):
+          state = SWEEPING
+          close_wall = False
+          t1 = time.time()
+  else:
+      if (t2 - t1 > 20):
+          state = SWEEPING
+          close_wall = False
+          t1 = time.time()
+```
