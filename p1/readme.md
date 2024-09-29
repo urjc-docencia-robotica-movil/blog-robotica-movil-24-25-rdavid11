@@ -6,5 +6,12 @@ David Pons Canet
 
 ## Objetivo
 
-Conseguir que la aspiradora aspiradora cubra el maximo espacio posible de una habitación.
+Desarollar un algoritmo que consiga que la aspiradora cubra el maximo espacio posible de una habitación.
+
+Tenemos un bumper y un LIDAR de 180º.
+
+## Resumen
+
+Mi algoritmo se basa en, primero acercarse a una pared, para despues seguirla 'x' tiempo, y despues hacer un barrido con moviminentos aleatorios
+durante 'y' timepo. Una vez acabado el barrido, se vuelve a buscar una pared y repite el proceso.
 
