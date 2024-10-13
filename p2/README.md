@@ -54,6 +54,11 @@ para no tener giros bruscos durante la realización de la vuelta. Lo he solucion
 escalandolo por una constante, la cual he ido probando a prueba y error hasta que
 he encontrado una que se ajustaba bien a lo requerido.
 
+La velocidad lineal, la he puesto con un clamp, para que sea el valor que sea, me
+lo deje entre un valor mínimo y uno máximo. Ya que si en alguna ocasión el F1 tiene
+que girar mucho, no llegue a unas velocidades muy bajas o incluso negativas.
+Dejandolo en un minimo de 5 m/s.
+
 ## Conclusión y observaciones
 
 Para los valores finales de las contantes Kp, Kd, y Ki, he tenido que tener dos
