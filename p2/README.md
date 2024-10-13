@@ -14,7 +14,7 @@ las imágenes de esa cámara para detectar la línea roja que hay pintada en el
 suelo y generar los comandos de control correspondientes (velocidad linear y 
 angular) para dirigir el coche a la meta. 
 
-## Detection de la linia
+## Detección de la linia
 
 Para el procesado de la imagen, primero paso la imagen a HSV, para tener un
 una mejor percepcion del color, i adaptarse mejor a situaciones reales, como
@@ -42,7 +42,7 @@ En esta ha sido el que el valor mas pequeño que tenido que darle, para que me h
 los moviminentos suaves deseados. Finalmente he acabado añadiendo la Ki para acabar
 obteniendo una vuelta perfecta.
 
-## Velocidad linel
+## Velocidad linal
 
 Para la velocidad lineal, primero pense en hacer tambien un PID para controlarla,
 pero me tope con que, no se me ocuria que error pasarle, o que setpoint ponerle.
@@ -53,3 +53,18 @@ cuenta que no era suficiente, ya que los valores de velocidad angular son peque�
 para no tener giros bruscos durante la realización de la vuelta. Lo he solucionado
 escalandolo por una constante, la cual he ido probando a prueba y error hasta que
 he encontrado una que se ajustaba bien a lo requerido.
+
+## Conclusión y observaciones
+
+Para los valores finales de las contantes Kp, Kd, y Ki, he tenido que tener dos
+de cada, en dos PIDs distintos, uno para el circuito simple, y el otro para el
+ackerman. Ya que requieren ajustes distinos para su optimo funcionamiento.
+
+Para la velocidad lineal, en la version simple, habia puesto de maxima 15 m/s, con
+lo que me hacia una muy buena vuelta en unos 40 segundos y practicamente sin 
+ninguna oscilacion. Despues he probado dandole un poco mas de velocidad maxima,
+a 20 m/s, con lo cual he conseguido bajar el tiempo en unos 6 segundos, dando
+un timepo por vuelta de 34 segundos. A cambio el coche en algun lugar del circuito
+tenia unas pequeñas oscilaciones. Pero como esto al final es un coche de carreras, 
+lo he dejado en 20 m/s, dandole prioridad al tiempo por vuelta, sacrificando unas 
+pequeñas oscilaciones. Igualmete adjunto un video de cada version.
