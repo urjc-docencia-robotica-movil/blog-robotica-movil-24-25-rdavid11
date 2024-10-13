@@ -67,4 +67,8 @@ a 20 m/s, con lo cual he conseguido bajar el tiempo en unos 6 segundos, dando
 un timepo por vuelta de 34 segundos. A cambio el coche en algun lugar del circuito
 tenia unas pequeñas oscilaciones. Pero como esto al final es un coche de carreras, 
 lo he dejado en 20 m/s, dandole prioridad al tiempo por vuelta, sacrificando unas 
-pequeñas oscilaciones. Igualmete adjunto un video de cada version.
+pequeñas oscilaciones. Mientras que en el modo ackerman, lo he dejado en una 
+velocidad lineal maxima de 15 m/s. Igualmete adjunto un video de cada version.
+
+Para realizar la vuelta en modo simple o en ackerman, hay que asinar a True o False
+una variable llamada 'ACKERMAN'.
