@@ -1,5 +1,3 @@
-cooredenadas de mapa giradas
-
 # P4-Global_navigation
 
 27/11/24
