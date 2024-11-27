@@ -2,7 +2,7 @@ cooredenadas de mapa giradas
 
 # P4-Global_navigation
 
-27/10/24
+27/11/24
 
 David Pons Canet
 
@@ -31,3 +31,5 @@ Una vez tenemos la rejilla de costes completa, desde la posición actual del tax
 ### Navegar
 
 Una vez tenemos nuestras coordenatas relativas del robot hasta el coste minimo en un radio de 6m, en forma de vector, vamos a utilizar ese vector para sacar las velocidades lineal y angular. 
+
+[Ver video](Grabación de pantalla desde 2024-11-27 18-22-25.webm)
