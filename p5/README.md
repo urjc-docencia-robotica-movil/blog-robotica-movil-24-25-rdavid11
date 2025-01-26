@@ -12,7 +12,7 @@ El objetivo de esta práctica es programar un algoritmo de localización basado 
 
 Para la inicializacion de particulas, utilizamos una distribucion gausiana entre los limites del mapa, y solo creando las particulas en lugares donde no haya obstaculos.
 
-initali
+![Image](https://github.com/user-attachments/assets/55f58ff2-5643-4534-a7da-81cafd0cd21f)
 
 ## Modelo probabilisitico de observacion sensorial
 
@@ -23,6 +23,8 @@ Las particulas que se situan fuera del mapa, o en obstaculos le bajamos la proba
 ## Modelo probabilistico de movimiento
 
 Para implementar el modelos probabilistico de movimiento, calculamos el incremento del movimiento, con el metodo HAL.getOdom(). En cada iteracion comparamos la diferencia entre las lecturas actuales y las anteriores, con ruido. Aplicamos esos incrementos a las particulas que ya teniamos.
+
+https://github.com/user-attachments/assets/21c83f79-4483-40d3-95a2-a65b2482252d
 
 ## Remuestreo de partículas
 
@@ -36,7 +38,7 @@ Para el movimiento del robot, he implementado un bump&go simple, el cual avanza 
 
 ## Video de funcionamiento
 
-
+![Video](https://github.com/user-attachments/assets/9fd6ea51-3a41-43c1-8e9f-bda32b0a99a3)
 
 ## Parametros 
 
