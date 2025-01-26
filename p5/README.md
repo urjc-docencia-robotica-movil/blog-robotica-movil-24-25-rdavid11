@@ -12,6 +12,8 @@ El objetivo de esta práctica es programar un algoritmo de localización basado 
 
 Para la inicializacion de particulas, utilizamos una distribucion gausiana entre los limites del mapa, y solo creando las particulas en lugares donde no haya obstaculos.
 
+initali
+
 ## Modelo probabilisitico de observacion sensorial
 
 Para calcular el peso de cada una de las particulas, calculamos el laser teorico de las particulas, y lo comparamos con la medida real del laser. Una vez tenemos la diferencia entre las medidas del laser reales y teoricas de cada particula, la utilizamos para obtener la probabilidad de esa particula.
@@ -43,7 +45,7 @@ Para el movimiento del robot, he implementado un bump&go simple, el cual avanza 
 N_PARTICLES = 1000
 
 # Noise parameters
-NOISE_XY = 0.01
+NOISE_XY = 0.05
 NOISE_YAW = 0.7
 INIT_ANGLE_STD = 3.14
 
@@ -64,5 +66,10 @@ LASER_NUM_BEAMS = 5
 # In practice, this should be equivalent to resizing the image by this factor.
 RAYTRACING_SKIP_STEPS = 1
 ```
+
+## Problemas y soluciones
+
+Al principio casi siempre me convergia en un lugar equivocado, al final descubri que era porque el laser en la posicion 0 teoricamente, 
+
 
 
