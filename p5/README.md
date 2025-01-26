@@ -69,9 +69,4 @@ LASER_NUM_BEAMS = 5
 RAYTRACING_SKIP_STEPS = 1
 ```
 
-## Problemas y soluciones
-
-Al principio casi siempre me convergia en un lugar equivocado, al final descubri que era porque el laser en la posicion 0 teoricamente, 
-
-
 
