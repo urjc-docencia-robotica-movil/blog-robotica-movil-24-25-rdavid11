@@ -38,7 +38,7 @@ Para el movimiento del robot, he implementado un bump&go simple, el cual avanza 
 
 ## Video de funcionamiento
 
-![Video](https://github.com/user-attachments/assets/9fd6ea51-3a41-43c1-8e9f-bda32b0a99a3)
+https://github.com/user-attachments/assets/9fd6ea51-3a41-43c1-8e9f-bda32b0a99a3
 
 ## Parametros 
 
