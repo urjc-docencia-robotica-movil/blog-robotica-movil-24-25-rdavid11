@@ -69,4 +69,6 @@ LASER_NUM_BEAMS = 5
 RAYTRACING_SKIP_STEPS = 1
 ```
 
+## Multiprocessing
 
+He usado al libreria multiprocessing para calcular las probabilidades. Creando un thread para el calculo de cada particula, para poder mejorar significativamente el funcionamiento del algoritmo.
